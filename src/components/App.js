@@ -9,13 +9,13 @@ import LoadMoreResults from './templates/loadMore';
 class App extends React.Component{
     state = {
         topCard : [
-            {tag:'Premium Bestseller',name:'Continental - Contiecocontact 5',model:'205/55 R16 H',vehtype:'SUV',stock:4,price : 340},
-            {tag:'Economy Bestseller',name:'Continental - Contiecocontact 5',model:'205/55 R16 H',vehtype:'SUV',stock:4,price : 340}
+            {key:1,tag:'Premium Bestseller',name:'Continental - Contiecocontact 5',model:'205/55 R16 H',vehtype:'SUV',stock:4,price : 340},
+            {key:2,tag:'Economy Bestseller',name:'Continental - Contiecocontact 5',model:'205/55 R16 H',vehtype:'SUV',stock:4,price : 340}
         ],
         listItem : [
-            {name:'Continental PremiumContact™ 6',model:'205/55 R16 H',vehtype:'SUV',stock:20,price : 340},
-            {name:'Continental PremiumContact™ 6',model:'205/55 R16 H',vehtype:'SUV',stock:8,price : 340},
-            {name:'Continental PremiumContact™ 6',model:'205/55 R16 H',vehtype:'SUV',stock:0,price : 340},
+            {key:1,name:'Continental PremiumContact™ 6',model:'205/55 R16 H',vehtype:'SUV',stock:20,price : 340},
+            {key:2,name:'Continental PremiumContact™ 6',model:'205/55 R16 H',vehtype:'SUV',stock:8,price : 340},
+            {key:3,name:'Continental PremiumContact™ 6',model:'205/55 R16 H',vehtype:'SUV',stock:0,price : 340},
         ]
     }
     render(){ 

@@ -3,7 +3,7 @@ import React from 'react';
 class SearchFilter extends React.Component{
     render(){
         return(
-            <div className="row my-3">
+            <div className="row my-3 filter-div">
                 <div className="col-sm-9">
                     <p>Selected Filters <span className="filter">Continental <a href=""><i className="fas fa-times-circle"></i></a> </span></p>
                 </div>

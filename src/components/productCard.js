@@ -16,14 +16,14 @@ class ProductCard extends React.Component{
             const renderCard = products.map((product) =>{
                 const total = product.price * 4;
                 return(
-                    <div className="col-lg-6">
+                    <div className="col-lg-6" key={product.key}>
                         <span className="card-tag y-color">{ product.tag}</span>
                         <div className="card" >
                             <div className="card-body">
                                 <div className="row">
                                     <div className="col-sm-4 px-3">
-                                        <img src="/images/tyre.jpg" alt="tyre" width="100" height="150" />
-                                        <img src="/images/auto.png" className="auto-express" alt="" />
+                                        <img src="/images/tyre.jpg" className="img-fluid" alt="tyre" width="100" height="150" />
+                                        <img src="/images/auto.png" className="img-fluid auto-express" alt="" />
                                     </div>
                                     <div className="col-sm-8">
                                         <p className="product-name">{product.name}</p>

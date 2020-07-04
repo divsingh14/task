@@ -143,3 +143,56 @@ nav .search-button{
     height: 46px;
     font-weight: bold;
 }
+
+
+@media (max-width:375px){
+	.search-box{
+		display: none;
+	}
+	.nav-links a i{
+		font-size: 20px;
+	}
+
+	nav .search-button{
+		margin-left: 20px;
+		border-radius: 50%;
+		font-size: 14px;
+		border: 1px solid #9C9D9D;
+	}
+	.nav-links{
+		display: flex;
+		justify-content: space-around;
+		width: 12rem;
+	}
+	.nav-links a{
+		font-weight: bold;
+		text-decoration: none;
+		color: #9C9D9D;
+	}
+	nav .navText{
+		display: none;
+	}
+
+	.filter-div{
+		display: none;
+	}
+}	
+
+@media (max-width:1024px){
+	.list-btn span{
+		display: none;
+	}
+	.list-btn .add-to-cart{
+		width: 50px;
+		border: none;
+		border-radius: 15px;
+		height: 35px;
+	}
+	
+	.list-btn .notify-me{
+		width: 50px;
+		border: 1px solid #FFA500;
+		border-radius: 15px;
+		height: 35px;
+	}
+}

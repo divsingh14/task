@@ -10,7 +10,7 @@ class ProductList extends React.Component{
     stockDeatils(stock){
         if(stock === 0){
             return (
-                <div className="col-sm-1">
+                <div className="col-sm-1" >
                     <p>Stock <img src="/images/reddot.png" alt="stock" /></p>
                     <p className="stock-back">Back in 1 week!</p>
                 </div>
@@ -51,7 +51,7 @@ class ProductList extends React.Component{
             const renderList = products.map((product) =>{
                 const total = product.price * 4;
                 return(
-                    <div className="col-lg-12 mt-1">
+                    <div className="col-lg-12 col-md-6 col-12  mt-1" key={product.key}>
                         <div className="card my-2">
                             <div className="card-body">
                                 <div className="row py-2">
@@ -69,7 +69,7 @@ class ProductList extends React.Component{
                                     {this.stockDeatils(product.stock)}
                                     
                                     <div className="col-sm-1">
-                                        <p>Price ₪340</p>
+                                        <p>Price ₪{product.price}</p>
                                     </div>
                                     <div className="col-sm-2">
                                         <QuantityButton />
@@ -77,7 +77,7 @@ class ProductList extends React.Component{
                                     <div className="col-sm-2">
                                         <p>Total <span className="total-amount">₪{total}</span></p>
                                     </div>
-                                    <div className="col-sm-2">
+                                    <div className="col-sm-2 list-btn">
                                         {this.cartButton(product.stock)}    
                                     </div>
                                 </div>

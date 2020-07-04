@@ -178,7 +178,7 @@ nav .search-button{
 	}
 }	
 
-@media (max-width:1024px){
+@media (max-width: 1200px) and (min-width: 1000px){
 	.list-btn span{
 		display: none;
 	}

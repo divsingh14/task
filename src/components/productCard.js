@@ -1,12 +1,12 @@
 import React from 'react';
-import QuantityButton from './templates/quantity';
-import AddToCart from './templates/addtocartBtn';
-import Spinner from './templates/spinner';
+import QuantityButton from './templates/quantity';          /* Quantity button */
+import AddToCart from './templates/addtocartBtn';           /* Add to Cart Button */
+import Spinner from './templates/spinner';                  /* Loading Spinner...if no data than Spinner  */
 
 class ProductCard extends React.Component{
     render(){
-        const products = this.props.productCard;
-        if(products.length === 0 ){
+        const products = this.props.productCard;            /* Get data from App.js */
+        if(products.length === 0 ){                         /* Check the data */            
             return(
                 <div className="text-center col-sm-12">
                     <Spinner />

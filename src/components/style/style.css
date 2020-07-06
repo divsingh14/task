@@ -188,10 +188,75 @@ nav .search-button i{
 @media (max-width:1024px){
 	.model-no,
 	.model-type{
-		font-size: 14px;
+		font-size: 12px;
+	}
+	.product-price p{
+		font-size: 12px;
+	}
+	.total-amount{
+		font-size: 16px;
 	}
 }
 
+@media (max-width: 1024px) and (min-width: 800px){
+	.list-btn button span{
+		display: none;
+	}
+	.list-btn .add-to-cart{
+		width: 50px;
+		border: none;
+		border-radius: 15px;
+		height: 35px;
+	}
+	
+	.list-btn .notify-me{
+		width: 50px;
+		border: 1px solid #FFA500;
+		border-radius: 15px;
+		height: 35px;
+	}
+}
+
+@media (max-width: 768px) and (min-width:400px){
+	.card-product-name{
+		font-size: 14px;
+	}
+	.model-no,
+	.model-type,
+	.stock p,
+	.product-price{
+		font-size: 12px;
+	}
+	.total-amount{
+		font-size: 16px;
+	}
+	.qty button{
+		width: 30px;
+		height: 30px;
+		font-size: 12px;
+	}
+	.qty .qty-icon{
+		font-size: 16px;
+	}
+	
+	.qty .qty-value{
+		width: 30px;
+		height: 30px;
+		margin: 0px -4px;
+	}
+
+	.add-to-cart{
+		width: 110px;
+		height:30px;
+		font-size: 12px;
+	}
+	
+	.notify-me{
+		width: 110px;
+		height:30px;
+		font-size: 12px;
+	}
+}
 @media (max-width:375px){
 	.search-box{
 		display: none;
@@ -238,51 +303,32 @@ nav .search-button i{
 		width: 120px;
 		font-size: 14px;
 	}
-	.s-card .add-to-cart{
+	.main-carousel .add-to-cart{
 		width: 50px;
 		border: none;
 		border-radius: 35px;
-		height:40px;
+		height:30px;
 		font-size: 14px;
 	}
-	.s-card .add-to-cart span{
+	.add-to-cart span,
+	.notify-me span{
+		display: all;
+	}
+	.main-carousel .add-to-cart span{
 		display: none;
 	}
-}	
-@media (max-width: 768px){
-	.card-product-name{
-		font-size: 14px;
-	}
-	.model-no,
-	.model-type{
+	.qty button{
+		width: 30px;
+		height: 30px;
 		font-size: 12px;
 	}
-	.product-price{
-		font-size: 12px;
-	}
-	.total-amount{
+	.qty .qty-icon{
 		font-size: 16px;
-	}
-	.qty{
-		font-size: 16px;
-	}
-}
-
-@media (max-width: 1024px){
-	.list-btn span{
-		display: none;
-	}
-	.list-btn .add-to-cart{
-		width: 50px;
-		border: none;
-		border-radius: 15px;
-		height: 35px;
 	}
 	
-	.list-btn .notify-me{
-		width: 50px;
-		border: 1px solid #FFA500;
-		border-radius: 15px;
-		height: 35px;
+	.qty .qty-value{
+		width: 30px;
+		height: 30px;
+		margin: 0px -4px;
 	}
-}
+}	

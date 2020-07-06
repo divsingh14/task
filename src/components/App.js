@@ -26,8 +26,8 @@ class App extends React.Component{
                 <div className="container my-4" >
                     <h4 className="main-heading"><b>Recommended Products</b></h4>
                     <SearchFilter />
-                    <div className="row">
-                        <ProductCard productCard={this.state.topCard} />
+                    <div className="main-carousel"  data-flickity='{ "cellAlign": "left", "contain": true , "prevNextButtons": false , "pageDots": false}'>
+                            <ProductCard productCard={this.state.topCard} />
                     </div>
                     <div className="row">
                         <ProductList productList={this.state.listItem} />

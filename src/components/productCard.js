@@ -12,31 +12,31 @@ class ProductCard extends React.Component{
                     <Spinner />
                 </div>
             )
-        }else{
+        }else{  
             const renderCard = products.map((product) =>{
                 const total = product.price * 4;
                 return(
-                    <div className="col-lg-6" key={product.key}>
+                    <div className="col" key={product.key}>
                         <span className="card-tag y-color">{ product.tag}</span>
-                        <div className="card" >
+                        <div className="card top-card" >
                             <div className="card-body">
                                 <div className="row">
-                                    <div className="col-sm-4 px-3">
+                                    <div className="col-sm-3">
                                         <img src="/images/tyre.jpg" className="img-fluid" alt="tyre" width="100" height="150" />
                                         <img src="/images/auto.png" className="img-fluid auto-express" alt="" />
                                     </div>
-                                    <div className="col-sm-8">
-                                        <p className="product-name">{product.name}</p>
+                                    <div className="col-sm-9">
+                                        <p className="product-name card-product-name">{product.name}</p>
                                         <div className="row">
-                                            <div className="col-sm-3">
+                                            <div className="col-sm-2">
                                                 <img src="images/approved.png" alt="Approved" />
                                             </div>
-                                            <div className="col-sm-3">
+                                            <div className="col-sm-4">
                                                 <p className="model-no">{product.model}</p>
                                                 <p className="model-type">{product.vehtype}</p>
                                             </div>
                                             <div className="col-sm-3">
-                                            <p>Stock <img src="images/stock.png" alt="stock" /></p>
+                                            <p>Stock <img src="images/stock.png" className="img-fluid m-11" alt="stock" /></p>
                                             <p>Price ₪{product.price}</p>
                                             </div>
                                             <div className="col-sm-3">

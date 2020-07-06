@@ -22,9 +22,9 @@ class App extends React.Component{
     render(){ 
         return(
             <main>
-                <NavBar />
+                <NavBar />  
                 <div className="container my-4" >
-                    <h4>Recommended Products</h4>
+                    <h4 className="main-heading"><b>Recommended Products</b></h4>
                     <SearchFilter />
                     <div className="row">
                         <ProductCard productCard={this.state.topCard} />

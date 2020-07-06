@@ -1,3 +1,4 @@
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -5,9 +6,14 @@
 }
 body{
 	background-color: #E5E5E5 !important;
+	font-family: 'Calibri', sans-serif;
 }
 .y-color{
 	background-color: #FFA500;
+}
+button:active,
+button:hover{
+	outline: 0px !important;
 }
 
 nav{
@@ -15,9 +21,8 @@ nav{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	min-height: 8vh;
+	min-height: 6vh;
 	box-shadow: 0 5px 6px -6px black;
-	padding: 1px;
 }
 nav .logo{
 	width: 20%;
@@ -46,26 +51,40 @@ nav .links{
 .nav-links a i{
 	font-size: 25px;
 }
+nav .nav-links .navText{
+	font-size: 14px;
+}
 
 nav .search .search-box{
 	width: 70%;
-	height: 30px;
+	height: 37px;
 	border-radius: 20px;
 	padding: 5px 15px;
 	border: 1px solid #9C9D9D;
 }
 
 nav .search-button{
-	margin-left: -25px;
+	margin-left: -36px;
 	border-radius: 50%;
 	font-size: 16px;
 	border: 1px solid #9C9D9D;
 }
+
+nav .search-button i{
+	font-weight: 600;
+}
+
+.main-heading{  
+	font-weight:bold;
+}
+.filter-text{
+	font-size: 16px;
+}
 .filter{
-	border: 1px solid black;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-weight: bold;
+	border: 1px solid #9C9D9D;
+    padding: 6px 12px;
+	border-radius: 20px;
+	font-size: 16px;
 }
 .filter a{
 	text-decoration: none;
@@ -74,50 +93,65 @@ nav .search-button{
 
 .card-tag{
 	font-weight: bold;
-	padding: 2px 5px;
+	padding: 2px 15px;
+	font-size: 14px;
+	height: 24px;
+}
+
+.top-card{
+	margin-top: -10px;
+	z-index: -1;
+}
+.card-product-name{
+	font-size: 20px;
 }
 
 .product-name{
-	font-weight: bold;
+	font-weight: 900;
+	font-size: 16px;
 	text-decoration: underline;
 }
 
 .model-no,
 .model-type{
-	font-size: 0.8rem !important;
+	font-size: 14px;
 }
 
 .auto-express{
-	margin-top: -80px;
+	position: absolute;
 }
 
 .total-amount{
 	font-weight: bold;
+	font-size: 20px;
 }
 
 .qty button{
-	width: 30px;
+	width: 40px;
 	background-color: white;
 	border: 1px solid #9C9D9D;
-	height: 30px;
+	height: 40px;
+	font-size: 16px;
+}
+.qty .qty-icon{
 	font-size: 16px;
 }
 
 .qty .qty-value{
 	text-align: center;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	margin: 0px -4px;
 	border: 1px solid #9C9D9D;
 	background-color: #9C9D9D;
 }
 .limited-qty{
 	font-weight: bold;
-	font-size: 11px;
+	font-size: 14px;
 }
 
 .stock-back{
-	font-size: 11px;
+	font-size: 14px;
 	font-weight: bold;
 	color: brown;
 }
@@ -125,15 +159,17 @@ nav .search-button{
 .add-to-cart{
 	width: 150px;
 	border: none;
-	border-radius: 15px;
-	height: 35px;
+	border-radius: 35px;
+	height:40px;
+	font-size: 16px;
 }
 
 .notify-me{
 	width: 150px;
 	border: 1px solid #FFA500;
-	border-radius: 15px;
-	height: 35px;
+	border-radius: 35px;
+	height: 40px;
+	font-size: 16px;
 }
 
 .load-more-result{
@@ -144,7 +180,6 @@ nav .search-button{
     font-weight: bold;
 }
 
-
 @media (max-width:375px){
 	.search-box{
 		display: none;
@@ -152,9 +187,10 @@ nav .search-button{
 	.nav-links a i{
 		font-size: 20px;
 	}
-
+	nav .search{
+		text-align: right;
+	}
 	nav .search-button{
-		margin-left: 20px;
 		border-radius: 50%;
 		font-size: 14px;
 		border: 1px solid #9C9D9D;
